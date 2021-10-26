@@ -1,0 +1,71 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net472</TargetFramework>
+        <LangVersion>9</LangVersion>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+      <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    </PropertyGroup>
+
+    <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+      <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <Reference Include="0Harmony, Version=2.0.2.0, Culture=neutral, PublicKeyToken=null">
+        <HintPath>$(WrathPath)\Wrath_Data\Managed\UnityModManager\0Harmony.dll</HintPath>
+      </Reference>
+      <Reference Include="Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+        <HintPath>..\lib\Assembly-CSharp_public.dll</HintPath>
+      </Reference>
+      <Reference Include="Newtonsoft.Json, Version=8.0.0.0, Culture=neutral, PublicKeyToken=null">
+        <HintPath>D:\SteamLibrary\steamapps\common\Pathfinder Second Adventure\Wrath_Data\Managed\Newtonsoft.Json.dll</HintPath>
+      </Reference>
+      <Reference Include="Owlcat.Runtime.Core, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+        <HintPath>D:\SteamLibrary\steamapps\common\Pathfinder Second Adventure\Wrath_Data\Managed\Owlcat.Runtime.Core.dll</HintPath>
+      </Reference>
+      <Reference Include="UnityModManager, Version=0.23.5.0, Culture=neutral, PublicKeyToken=null">
+        <HintPath>$(WrathPath)\Wrath_Data\Managed\UnityModManager\UnityModManager.dll</HintPath>
+      </Reference>
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Update="Info.json">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </None>
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="AssemblyPublicizer" Version="1.0.0">
+        <PrivateAssets>all</PrivateAssets>
+        <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      </PackageReference>
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Remove="Config\MergeableSpellbooks.json" />
+      <EmbeddedResource Include="Config\MergeableSpellbooks.json" />
+      <None Remove="Config\Blueprints.json" />
+      <EmbeddedResource Include="Config\Blueprints.json" />
+    </ItemGroup>
+    <Target Name="RemoveLib" BeforeTargets="Clean" Condition="Exists('$(SolutionDir)lib')">
+        <RemoveDir Directories="$(SolutionDir)lib" />
+    </Target>
+    <Target Name="CreateLib" AfterTargets="RemoveLib" Condition="!Exists('$(SolutionDir)lib')">
+        <MakeDir Directories="$(SolutionDir)lib" />
+    </Target>
+    <Target Name="Publicise" AfterTargets="CreateLib">
+        <ItemGroup>
+            <PubliciseAssemblyCSharp Include="$(WrathPath)\Wrath_Data\Managed\Assembly-CSharp.dll" />
+            <PubliciseUniRx Include="$(WrathPath)\Wrath_Data\Managed\UniRx.dll" />
+        </ItemGroup>
+        <PublicizeTask InputAssemblies="@(PubliciseAssemblyCSharp)" OutputDir="$(SolutionDir)lib/" />
+        <PublicizeTask InputAssemblies="@(PubliciseUniRx)" OutputDir="$(SolutionDir)lib/" />
+    </Target>
+    <Target Name="Install Mod" AfterTargets="Build">
+        <Copy SourceFiles="$(TargetPath); $(TargetDir)$(TargetName).pdb; $(TargetDir)Info.json" DestinationFolder="$(WrathPath)\Mods\$(ProjectName)" ContinueOnError="true" />
+    </Target>
+</Project>

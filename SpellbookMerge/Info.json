@@ -1,0 +1,10 @@
+﻿{
+  "Id": "SpellbookMerge",
+  "DisplayName": "Spellbook Merge",
+  "Author": "vikigenius",
+  "Version": "1.0.0",
+  "ManagerVersion": "0.21.3",
+  "Requirements": [],
+  "AssemblyName": "SpellbookMerge.dll",
+  "EntryMethod": "SpellbookMerge.Main.Load"
+}
