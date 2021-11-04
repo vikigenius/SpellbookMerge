@@ -37,7 +37,7 @@ namespace SpellbookMerge.Features
                     Resources.TryGetBlueprint<BlueprintSpellbook>("bc04fc157a8801d41b877ad0d9af03dd");
                 var skaldSpellbook =
                     Resources.TryGetBlueprint<BlueprintSpellbook>("8f159d2f22ced074ea32995eb5a446a0");
-                var azataSpellList = Resources.TryGetBlueprint<BlueprintSpellList>("ca8c6024bd2519f4b97162a3ad286920");
+                var azataSpellList = Resources.TryGetBlueprint<BlueprintSpellList>("10c634d2b386d8d41b18a889adb8cd49");
 
                 bp.SetName("Mythic Spellbook");
                 bp.SetDescription("At 3rd rank, Azata receives the ability to cast mythic {g|Encyclopedia:Spell}spells{/g}. They can either choose to take it as part of an existing hybrid arcane caster spellbook, or as a standalone spellbook.");
