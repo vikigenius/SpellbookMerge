@@ -24,7 +24,6 @@ namespace SpellbookMerge
             Directory.CreateDirectory(UserConfigDir);
             ModSettings.OverrideFrom(UserConfigDir);
             ModEntry.OnToggle = OnToggle;
-            ModEntry.OnSaveGUI = OnSaveGUI;
             var harmony = new Harmony(ModEntry.Info.Id);
             harmony.PatchAll();
             return true;
@@ -34,10 +33,6 @@ namespace SpellbookMerge
         {
             Enabled = value;
             return true;
-        }
-
-        private static void OnSaveGUI(UnityModManager.ModEntry modEntry) {
-            ModSettings.MergeableSpellbooks.SaveTo(UserConfigDir!);
         }
         
         public static void Log(string msg) {

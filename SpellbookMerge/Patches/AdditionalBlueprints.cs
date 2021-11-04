@@ -19,7 +19,8 @@ namespace SpellbookMerge.Patches
                 if (!Main.Enabled || _initialized) return;
                 _initialized = true;
                 Main.LogHeader("Adding new Blueprints");
-                Features.AeonIncorporateSpellbook.AddAeonIncorporateSpellbookFeature();
+                Features.IncorporateSpellbook.AddAeonIncorporateSpellbookFeature();
+                Features.IncorporateSpellbook.AddAzataIncorporateSpellbookFeature();
             }
         }
     }

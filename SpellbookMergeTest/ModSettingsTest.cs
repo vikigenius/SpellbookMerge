@@ -12,14 +12,5 @@ namespace SpellbookMergeTest
             Assert.NotNull(blueprints);
             Assert.NotEmpty(blueprints.NewBlueprints);
         }
-        
-        [Fact]
-        public void MergeableSpellbooksTest()
-        {
-            var spellbooks = MergeableSpellbooks.FromEmbeddedResource();
-            Assert.NotNull(spellbooks);
-            Assert.True(spellbooks?.Aeon!.ShouldMerge);
-            Assert.True(spellbooks?.Aeon!.Inquisitor!.ShouldMerge);
-        }
     }
 }
