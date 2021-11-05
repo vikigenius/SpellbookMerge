@@ -74,14 +74,14 @@
   </Target>
   
   <Target Name="PackageRelease" AfterTargets="Build" Condition="'$(Configuration)'=='RELEASE'">
-    <CreateItem Include="$(TargetPath)" >
-      <Output ItemName="MainDLL" TaskParameter="Include"/>
+    <CreateItem Include="$(TargetPath)">
+      <Output ItemName="MainDLL" TaskParameter="Include" />
     </CreateItem>
-    <CreateItem Include="$(TargetDir)\$(TargetName).pdb" >
-      <Output ItemName="DebugSymbols" TaskParameter="Include"/>
+    <CreateItem Include="$(TargetDir)\$(TargetName).pdb">
+      <Output ItemName="DebugSymbols" TaskParameter="Include" />
     </CreateItem>
-    <CreateItem Include="$(TargetDir)\Info.json" >
-      <Output ItemName="ModInfo" TaskParameter="Include"/>
+    <CreateItem Include="$(TargetDir)\Info.json">
+      <Output ItemName="ModInfo" TaskParameter="Include" />
     </CreateItem>
     <Zip ZipFileName="$(TargetDir)\$(TargetName).zip" WorkingDirectory="$(TargetDir)" Files="@(MainDLL); @(DebugSymbols); @(ModInfo)" />
   </Target>
