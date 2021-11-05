@@ -10,7 +10,7 @@ namespace SpellbookMerge.Features
             Resources.CreateBlueprint<BlueprintFeatureSelectMythicSpellbook>("AeonIncorporateSpellbook", bp =>
             {
                 bp.SetName("Mythic Spellbook");
-                bp.SetDescription("At 3rd rank, Aeon receives the ability to cast mythic {g|Encyclopedia:Spell}spells{/g}. He can either choose to take it as part of an existing hybrid divine caster spellbook, or as a standalone spellbook.");
+                bp.SetDescription("At 3rd rank, Aeon receives the ability to cast mythic {g|Encyclopedia:Spell}spells{/g}. They can either choose to take it as part of an existing hybrid divine caster spellbook, or as a standalone spellbook.");
                 
                 bp.m_AllowedSpellbooks = new[]
                 {
