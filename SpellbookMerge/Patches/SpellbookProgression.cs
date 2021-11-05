@@ -22,6 +22,7 @@ namespace SpellbookMerge.Patches
                 PatchMagusSpellSlotProgression();
                 PatchBardSpellSlotProgression();
                 PatchSkaldSpellSlotProgression();
+                PatchSwordSaintSpellSlotProgression();
             }
 
             private static void PatchHybridCasterSpellProgression(BlueprintSpellsTable hybridCasterSlots)
@@ -80,6 +81,14 @@ namespace SpellbookMerge.Patches
                 var skaldSpellSlots = Resources.SpellTableBlueprints.SkaldSpellsTable;
                 PatchHybridCasterSpellProgression(skaldSpellSlots);
                 Main.Log($"Patched Skald Spell Levels to {skaldSpellSlots.Levels.Length}");
+            }
+            
+            // Patch SwordSaint Spellbook to allow 7th level spells
+            private static void PatchSwordSaintSpellSlotProgression()
+            {
+                var swordSaintSpellSlots = Resources.SpellTableBlueprints.SwordSaintSpellsTable;
+                PatchHybridCasterSpellProgression(swordSaintSpellSlots);
+                Main.Log($"Patched SwordSaint Spell Levels to {swordSaintSpellSlots.Levels.Length}");
             }
         }
     }

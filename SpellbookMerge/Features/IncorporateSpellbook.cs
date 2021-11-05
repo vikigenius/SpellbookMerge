@@ -33,7 +33,8 @@ namespace SpellbookMerge.Features
                 {
                     Resources.SpellbookBlueprints.MagusSpellbook.ToReference<BlueprintSpellbookReference>(),
                     Resources.SpellbookBlueprints.BardSpellbook.ToReference<BlueprintSpellbookReference>(),
-                    Resources.SpellbookBlueprints.SkaldSpellbook.ToReference<BlueprintSpellbookReference>()
+                    Resources.SpellbookBlueprints.SkaldSpellbook.ToReference<BlueprintSpellbookReference>(),
+                    Resources.SpellbookBlueprints.SwordSaintSpellbook.ToReference<BlueprintSpellbookReference>()
                 };
                 bp.m_MythicSpellList = Resources.SpellListBlueprints.AzataSpellList.ToReference<BlueprintSpellListReference>();
                 bp.IsClassFeature = true;

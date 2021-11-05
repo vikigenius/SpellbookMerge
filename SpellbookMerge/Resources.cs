@@ -16,6 +16,7 @@ namespace SpellbookMerge
             public static BlueprintSpellbook MagusSpellbook => TryGetBlueprint<BlueprintSpellbook>("5d8d04e76dff6c5439de99af0d57be63")!;
             public static BlueprintSpellbook BardSpellbook => TryGetBlueprint<BlueprintSpellbook>("bc04fc157a8801d41b877ad0d9af03dd")!;
             public static BlueprintSpellbook SkaldSpellbook => TryGetBlueprint<BlueprintSpellbook>("8f159d2f22ced074ea32995eb5a446a0")!;
+            public static BlueprintSpellbook SwordSaintSpellbook => TryGetBlueprint<BlueprintSpellbook>("682545e11e5306c45b14ca78bcbe3e62")!;
         }
 
         internal static class SpellListBlueprints
@@ -38,6 +39,7 @@ namespace SpellbookMerge
             public static BlueprintSpellsTable MagusSpellsTable => TryGetBlueprint<BlueprintSpellsTable>("6326b540f7c6a604f9d6f82cc0e2293c")!;
             public static BlueprintSpellsTable BardSpellsTable => TryGetBlueprint<BlueprintSpellsTable>("0a8eec9ca5c0dc64795243ab3c55d924")!;
             public static BlueprintSpellsTable SkaldSpellsTable => TryGetBlueprint<BlueprintSpellsTable>("39aeb5d8dafde5a40ba2032dec65db70")!;
+            public static BlueprintSpellsTable SwordSaintSpellsTable => TryGetBlueprint<BlueprintSpellsTable>("b9fdc0b2d37eb9e4298f9163edf5ca82")!;
         }
 
         
