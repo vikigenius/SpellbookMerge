@@ -23,7 +23,7 @@ Azata gets to merge spellbooks with Magus, Bard and Skald
 Demon gets to merge spellbooks with BloodRager
 
 ### Trickster
-Demon gets to merge spellbooks with Magus
+Trickster gets to merge spellbooks with Magus
 
 
 ## Base Spellbooks
