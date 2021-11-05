@@ -19,6 +19,8 @@ namespace SpellbookMerge.Patches
                 Main.LogHeader("Patching Mythic Progressions");
                 PatchAeonProgression();
                 PatchAzataProgression();
+                PatchDemonProgression();
+                PatchTricksterProgression();
             }
 
             private static void PatchAeonProgression()
@@ -39,6 +41,26 @@ namespace SpellbookMerge.Patches
                 azataProgression.LevelEntries[0].m_Features
                     .Add(azataIncorporateSpellbookFeature.ToReference<BlueprintFeatureBaseReference>());
                 Main.Log("Patched Azata Progression");
+            }
+            
+            private static void PatchDemonProgression()
+            {
+                var demonProgression = Resources.ProgressionBlueprints.DemonProgression;
+                var demonIncorporateSpellbookFeature =
+                    Resources.TryGetModBlueprint<BlueprintFeatureSelectMythicSpellbook>("DemonIncorporateSpellbook");
+                demonProgression.LevelEntries[0].m_Features
+                    .Add(demonIncorporateSpellbookFeature.ToReference<BlueprintFeatureBaseReference>());
+                Main.Log("Patched Demon Progression");
+            }
+
+            private static void PatchTricksterProgression()
+            {
+                var tricksterProgression = Resources.ProgressionBlueprints.TricksterProgression;
+                var tricksterIncorporateSpellbookFeature =
+                    Resources.TryGetModBlueprint<BlueprintFeatureSelectMythicSpellbook>("TricksterIncorporateSpellbook");
+                tricksterProgression.LevelEntries[0].m_Features
+                    .Add(tricksterIncorporateSpellbookFeature.ToReference<BlueprintFeatureBaseReference>());
+                Main.Log("Patched Trickster Progression");
             }
         }
     }

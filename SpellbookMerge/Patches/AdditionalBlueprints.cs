@@ -21,6 +21,8 @@ namespace SpellbookMerge.Patches
                 Main.LogHeader("Adding new Blueprints");
                 Features.IncorporateSpellbook.AddAeonIncorporateSpellbookFeature();
                 Features.IncorporateSpellbook.AddAzataIncorporateSpellbookFeature();
+                Features.IncorporateSpellbook.AddDemonIncorporateSpellbookFeature();
+                Features.IncorporateSpellbook.AddTricksterIncorporateSpellbookFeature();
             }
         }
     }

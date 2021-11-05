@@ -19,12 +19,18 @@ Aeon gets to merge spellbooks with WarPriest and Inquisitor spellbook
 ### Azata
 Azata gets to merge spellbooks with Magus, Bard and Skald
 
+### Demon
+Demon gets to merge spellbooks with BloodRager
+
+### Trickster
+Demon gets to merge spellbooks with Magus
+
 
 ## Base Spellbooks
 
-All the above mentioned spellbooks (Inquisitor, WarPriest, Magus, Bard and Skald) have had their spell progressions patched so that they are able to cast 7th level spells from their merged mythic paths.
+All the above mentioned spellbooks (Inquisitor, WarPriest, Magus, Bard and Skald) have had their spell progressions patched so that they are able to cast highest level spells from their merged mythic paths.
 
-All of them should be able to cast 7th level spells from caster level 25 onwards.
+All of them should be able to cast highest level spells from their Mythic Paths upon reaching caster level 25.
 
 
 ## FAQ

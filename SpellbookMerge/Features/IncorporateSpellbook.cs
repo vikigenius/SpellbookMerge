@@ -40,5 +40,39 @@ namespace SpellbookMerge.Features
                 bp.IsClassFeature = true;
             });
         }
+        
+        public static void AddDemonIncorporateSpellbookFeature()
+        {
+            Resources.CreateBlueprint<BlueprintFeatureSelectMythicSpellbook>("DemonIncorporateSpellbook", bp =>
+            {
+                bp.SetName("Mythic Spellbook");
+                bp.SetDescription("At 3rd rank, Demon receives the ability to cast mythic {g|Encyclopedia:Spell}spells{/g}. They can either choose to take it as part of an existing hybrid arcane caster spellbook, or as a standalone spellbook.");
+                
+                bp.m_AllowedSpellbooks = new[]
+                {
+                    Resources.SpellbookBlueprints.BloodRagerSpellbook.ToReference<BlueprintSpellbookReference>()
+                };
+                bp.m_MythicSpellList = Resources.SpellListBlueprints.DemonSpellList.ToReference<BlueprintSpellListReference>();
+                bp.IsClassFeature = true;
+            });
+        }
+        
+        public static void AddTricksterIncorporateSpellbookFeature()
+        {
+            Resources.CreateBlueprint<BlueprintFeatureSelectMythicSpellbook>("TricksterIncorporateSpellbook", bp =>
+            {
+                bp.SetName("Mythic Spellbook");
+                bp.SetDescription("At 3rd rank, Trickster receives the ability to cast mythic {g|Encyclopedia:Spell}spells{/g}. They can either choose to take it as part of an existing hybrid arcane caster spellbook, or as a standalone spellbook.");
+                
+                bp.m_AllowedSpellbooks = new[]
+                {
+                    Resources.SpellbookBlueprints.MagusSpellbook.ToReference<BlueprintSpellbookReference>(),
+                    Resources.SpellbookBlueprints.SwordSaintSpellbook.ToReference<BlueprintSpellbookReference>()
+                };
+                bp.m_MythicSpellList = Resources.SpellListBlueprints.TricksterSpellList.ToReference<BlueprintSpellListReference>();
+                bp.IsClassFeature = true;
+            });
+        }
+
     }
 }

@@ -23,6 +23,7 @@ namespace SpellbookMerge.Patches
                 PatchBardSpellSlotProgression();
                 PatchSkaldSpellSlotProgression();
                 PatchSwordSaintSpellSlotProgression();
+                PatchBloodRagerSpellSlotProgression();
             }
 
             private static void PatchHybridCasterSpellProgression(BlueprintSpellsTable hybridCasterSlots)
@@ -87,8 +88,42 @@ namespace SpellbookMerge.Patches
             private static void PatchSwordSaintSpellSlotProgression()
             {
                 var swordSaintSpellSlots = Resources.SpellTableBlueprints.SwordSaintSpellsTable;
-                PatchHybridCasterSpellProgression(swordSaintSpellSlots);
+                List<SpellsLevelEntry> levels = new List<SpellsLevelEntry>(swordSaintSpellSlots.Levels);
+                for (var i = 0; i < 8; i++) {
+                    var spellLevel = new SpellsLevelEntry
+                    {
+                        Count = i switch
+                        {
+                            > 6 => new[] {0, 4, 4, 4, 4, 4, 4, 2},
+                            > 4 => new[] {0, 4, 4, 4, 4, 4, 4, 1},
+                            _ => new[] {0, 4, 4, 4, 4, 4, 4}
+                        }
+                    };
+                    levels.Add(spellLevel);
+                }
+                swordSaintSpellSlots.Levels = levels.ToArray();
                 Main.Log($"Patched SwordSaint Spell Levels to {swordSaintSpellSlots.Levels.Length}");
+            }
+            
+            // Patch BloodRager Spellbook to allow 7th level spells
+            private static void PatchBloodRagerSpellSlotProgression()
+            {
+                var bloodRagerSpellSlots = Resources.SpellTableBlueprints.BloodRagerSpellsTable;
+                List<SpellsLevelEntry> levels = new List<SpellsLevelEntry>(bloodRagerSpellSlots.Levels);
+                for (var i = 0; i < 8; i++) {
+                    var spellLevel = new SpellsLevelEntry
+                    {
+                        Count = i switch
+                        {
+                            > 6 => new[] {0, 4, 4, 3, 2, 2},
+                            > 4 => new[] {0, 4, 4, 3, 2, 1},
+                            _ => new[] {0, 4, 4, 3, 2}
+                        }
+                    };
+                    levels.Add(spellLevel);
+                }
+                bloodRagerSpellSlots.Levels = levels.ToArray();
+                Main.Log($"Patched BloodRager Spell Levels to {bloodRagerSpellSlots.Levels.Length}");
             }
         }
     }

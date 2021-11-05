@@ -17,19 +17,24 @@ namespace SpellbookMerge
             public static BlueprintSpellbook BardSpellbook => TryGetBlueprint<BlueprintSpellbook>("bc04fc157a8801d41b877ad0d9af03dd")!;
             public static BlueprintSpellbook SkaldSpellbook => TryGetBlueprint<BlueprintSpellbook>("8f159d2f22ced074ea32995eb5a446a0")!;
             public static BlueprintSpellbook SwordSaintSpellbook => TryGetBlueprint<BlueprintSpellbook>("682545e11e5306c45b14ca78bcbe3e62")!;
+            public static BlueprintSpellbook BloodRagerSpellbook => TryGetBlueprint<BlueprintSpellbook>("e19484252c2f80e4a9439b3681b20f00")!;
+
         }
 
         internal static class SpellListBlueprints
         {
             public static BlueprintSpellList AeonSpellList => TryGetBlueprint<BlueprintSpellList>("ca8c6024bd2519f4b97162a3ad286920")!;
             public static BlueprintSpellList AzataSpellList => TryGetBlueprint<BlueprintSpellList>("10c634d2b386d8d41b18a889adb8cd49")!;
+            public static BlueprintSpellList DemonSpellList => TryGetBlueprint<BlueprintSpellList>("abb1991bf6e996348bb743471ee7e1c1")!;
+            public static BlueprintSpellList TricksterSpellList => TryGetBlueprint<BlueprintSpellList>("7a5ea54564c7d494794f34d0f5a9abb3")!;
         }
 
         internal static class ProgressionBlueprints
         {
             public static BlueprintProgression AeonProgression => TryGetBlueprint<BlueprintProgression>("34b9484b0d5ce9340ae51d2bf9518bbe")!;
             public static BlueprintProgression AzataProgression => TryGetBlueprint<BlueprintProgression>("9db53de4bf21b564ca1a90ff5bd16586")!;
-
+            public static BlueprintProgression DemonProgression => TryGetBlueprint<BlueprintProgression>("285fe49f7df8587468f676aa49362213")!;
+            public static BlueprintProgression TricksterProgression => TryGetBlueprint<BlueprintProgression>("cc64789b0cc5df14b90da1ffee7bbeea")!;
         }
 
         internal static class SpellTableBlueprints
@@ -40,6 +45,7 @@ namespace SpellbookMerge
             public static BlueprintSpellsTable BardSpellsTable => TryGetBlueprint<BlueprintSpellsTable>("0a8eec9ca5c0dc64795243ab3c55d924")!;
             public static BlueprintSpellsTable SkaldSpellsTable => TryGetBlueprint<BlueprintSpellsTable>("39aeb5d8dafde5a40ba2032dec65db70")!;
             public static BlueprintSpellsTable SwordSaintSpellsTable => TryGetBlueprint<BlueprintSpellsTable>("b9fdc0b2d37eb9e4298f9163edf5ca82")!;
+            public static BlueprintSpellsTable BloodRagerSpellsTable => TryGetBlueprint<BlueprintSpellsTable>("caf7018942861664ebe87687893ad05d")!;
         }
 
         
