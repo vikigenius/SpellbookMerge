@@ -28,7 +28,7 @@ Trickster gets to merge spellbooks with Magus
 
 ## Base Spellbooks
 
-All the above mentioned spellbooks (Inquisitor, WarPriest, Magus, Bard and Skald) have had their spell progressions patched so that they are able to cast highest level spells from their merged mythic paths.
+All the above mentioned spellbooks have had their spell progressions patched so that they are able to cast highest level spells from their merged mythic paths.
 
 All of them should be able to cast highest level spells from their Mythic Paths upon reaching caster level 25.
 
@@ -40,3 +40,10 @@ All of them should be able to cast highest level spells from their Mythic Paths 
 Technically we can, but balancing them is a nightmare. It is easier to merge full casters with full casters (eg: Angel-Oracle, Lich-Sorcerer) and hybrid casters with hybrid casters (eg: Aeon-Inquisitor, Azata-Magus).
 Paladin only gains up to 4th level spells, if we allow Angel to merge with it, there is no easy way to balance Paladin spell progression so that it is able to cast 9th/10th level spells.
 If you have any suggestions for balancing, let me know and I will think about it.
+
+## Acknowledgements
+
+I would like to give my sincerest thanks to:
+
+1. Owlcat for this amazing game.
+2. My fellow modders from discord for inspiration and answering my questions. Particularly Narria Cabarius, Vek17, Bubbles and ArcaneTrixter.
