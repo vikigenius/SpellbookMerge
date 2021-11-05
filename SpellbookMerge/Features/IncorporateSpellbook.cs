@@ -1,5 +1,6 @@
 ﻿using Kingmaker.Blueprints;
 using Kingmaker.Blueprints.Classes;
+using Kingmaker.Blueprints.Classes.Spells;
 using SpellbookMerge.Extensions;
 
 namespace SpellbookMerge.Features
@@ -67,7 +68,9 @@ namespace SpellbookMerge.Features
                 bp.m_AllowedSpellbooks = new[]
                 {
                     Resources.SpellbookBlueprints.MagusSpellbook.ToReference<BlueprintSpellbookReference>(),
-                    Resources.SpellbookBlueprints.SwordSaintSpellbook.ToReference<BlueprintSpellbookReference>()
+                    Resources.SpellbookBlueprints.SwordSaintSpellbook.ToReference<BlueprintSpellbookReference>(),
+                    Resources.SpellbookBlueprints.AlchemistSpellbook.ToReference<BlueprintSpellbookReference>(),
+                    Resources.SpellbookBlueprints.EldritchScoundrelSpellbook.ToReference<BlueprintSpellbookReference>()
                 };
                 bp.m_MythicSpellList = Resources.SpellListBlueprints.TricksterSpellList.ToReference<BlueprintSpellListReference>();
                 bp.IsClassFeature = true;

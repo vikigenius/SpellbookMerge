@@ -14,17 +14,28 @@ I have tested this mod only with Aeon-Inquisitor, the other merges are untested 
 
 ### Aeon
 
-Aeon gets to merge spellbooks with WarPriest and Inquisitor spellbook
+Aeon gets to merge spellbooks with the following base spellbooks
+
+* WarPriest
+* Inquisitor
 
 ### Azata
-Azata gets to merge spellbooks with Magus, Bard and Skald
+Azata gets to merge spellbooks with the following base spellbooks
+* Magus
+* Bard
+* Skald
+* Sword Saint
 
 ### Demon
-Demon gets to merge spellbooks with BloodRager
+Demon gets to merge spellbooks with the following base spellbooks
+* BloodRager
 
 ### Trickster
-Trickster gets to merge spellbooks with Magus
-
+Trickster gets to merge spellbooks with the following base spellbooks
+* Alchemist
+* Eldritch Scoundrel
+* Magus
+* Sword Saint
 
 ## Base Spellbooks
 

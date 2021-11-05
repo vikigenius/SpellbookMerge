@@ -18,7 +18,8 @@ namespace SpellbookMerge
             public static BlueprintSpellbook SkaldSpellbook => TryGetBlueprint<BlueprintSpellbook>("8f159d2f22ced074ea32995eb5a446a0")!;
             public static BlueprintSpellbook SwordSaintSpellbook => TryGetBlueprint<BlueprintSpellbook>("682545e11e5306c45b14ca78bcbe3e62")!;
             public static BlueprintSpellbook BloodRagerSpellbook => TryGetBlueprint<BlueprintSpellbook>("e19484252c2f80e4a9439b3681b20f00")!;
-
+            public static BlueprintSpellbook AlchemistSpellbook => TryGetBlueprint<BlueprintSpellbook>("027d37761f3804042afa96fe3e9086cc")!;
+            public static BlueprintSpellbook EldritchScoundrelSpellbook => TryGetBlueprint<BlueprintSpellbook>("4f96fb20f06b7494a8b2bd731a70af6c")!;
         }
 
         internal static class SpellListBlueprints
@@ -46,6 +47,7 @@ namespace SpellbookMerge
             public static BlueprintSpellsTable SkaldSpellsTable => TryGetBlueprint<BlueprintSpellsTable>("39aeb5d8dafde5a40ba2032dec65db70")!;
             public static BlueprintSpellsTable SwordSaintSpellsTable => TryGetBlueprint<BlueprintSpellsTable>("b9fdc0b2d37eb9e4298f9163edf5ca82")!;
             public static BlueprintSpellsTable BloodRagerSpellsTable => TryGetBlueprint<BlueprintSpellsTable>("caf7018942861664ebe87687893ad05d")!;
+            public static BlueprintSpellsTable AlchemistSpellsTable => TryGetBlueprint<BlueprintSpellsTable>("bf4a0a03a45275d438b8c59cd5388259")!;
         }
 
         

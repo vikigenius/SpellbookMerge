@@ -24,6 +24,7 @@ namespace SpellbookMerge.Patches
                 PatchSkaldSpellSlotProgression();
                 PatchSwordSaintSpellSlotProgression();
                 PatchBloodRagerSpellSlotProgression();
+                PatchAlchemistSpellSlotProgression();
             }
 
             private static void PatchHybridCasterSpellProgression(BlueprintSpellsTable hybridCasterSlots)
@@ -125,6 +126,15 @@ namespace SpellbookMerge.Patches
                 bloodRagerSpellSlots.Levels = levels.ToArray();
                 Main.Log($"Patched BloodRager Spell Levels to {bloodRagerSpellSlots.Levels.Length}");
             }
+            
+            // Patch Alchemist Spellbook to allow 7th level spells
+            private static void PatchAlchemistSpellSlotProgression()
+            {
+                var alchemistSpellSlots = Resources.SpellTableBlueprints.AlchemistSpellsTable;
+                PatchHybridCasterSpellProgression(alchemistSpellSlots);
+                Main.Log($"Patched Alchemist Spell Levels to {alchemistSpellSlots.Levels.Length}");
+            }
+
         }
     }
 }
