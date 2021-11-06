@@ -20,6 +20,9 @@ namespace SpellbookMerge
             public static BlueprintSpellbook BloodRagerSpellbook => TryGetBlueprint<BlueprintSpellbook>("e19484252c2f80e4a9439b3681b20f00")!;
             public static BlueprintSpellbook AlchemistSpellbook => TryGetBlueprint<BlueprintSpellbook>("027d37761f3804042afa96fe3e9086cc")!;
             public static BlueprintSpellbook EldritchScoundrelSpellbook => TryGetBlueprint<BlueprintSpellbook>("4f96fb20f06b7494a8b2bd731a70af6c")!;
+            public static BlueprintSpellbook HunterSpellbook => TryGetBlueprint<BlueprintSpellbook>("885cd422aa357e2409146b38bb1fec51")!;
+            public static BlueprintSpellbook SorcererSpellbook => TryGetBlueprint<BlueprintSpellbook>("b3db3766a4b605040b366265e2af0e50")!;
+            public static BlueprintSpellbook DruidSpellbook => TryGetBlueprint<BlueprintSpellbook>("fc78193f68150454483a7eea8b605b71")!;
         }
 
         internal static class SpellListBlueprints

@@ -18,6 +18,7 @@ Aeon gets to merge spellbooks with the following base spellbooks
 
 * WarPriest
 * Inquisitor
+* Druid
 
 ### Azata
 Azata gets to merge spellbooks with the following base spellbooks
@@ -25,10 +26,13 @@ Azata gets to merge spellbooks with the following base spellbooks
 * Bard
 * Skald
 * Sword Saint
+* Sorcerer
 
 ### Demon
 Demon gets to merge spellbooks with the following base spellbooks
 * BloodRager
+* Hunter
+* Skald
 
 ### Trickster
 Trickster gets to merge spellbooks with the following base spellbooks
@@ -39,10 +43,19 @@ Trickster gets to merge spellbooks with the following base spellbooks
 
 ## Base Spellbooks
 
-All the above mentioned spellbooks have had their spell progressions patched so that they are able to cast highest level spells from their merged mythic paths.
+The following spellbooks have had their spell slot progressions patched to allow access to higher level spells from mythic paths.
 
-All of them should be able to cast highest level spells from their Mythic Paths upon reaching caster level 25.
+* Magus
+* Sword Saint
+* Alchemist
+* BloodRager
+* Bard
+* Skald
+* Inquisitor
+* WarPriest
 
+BloodRager can now cast 5th level spells once your Caster Level goes beyond 20.
+The rest of the hybrid casters mentioned above can cast 7th level spells post CL 20.
 
 ## FAQ
 

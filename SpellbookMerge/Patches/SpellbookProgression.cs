@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 using HarmonyLib;
 using Kingmaker.Blueprints.Classes.Spells;
 using Kingmaker.Blueprints.JsonSystem;
@@ -30,18 +31,15 @@ namespace SpellbookMerge.Patches
             private static void PatchHybridCasterSpellProgression(BlueprintSpellsTable hybridCasterSlots)
             {
                 List<SpellsLevelEntry> levels = new List<SpellsLevelEntry>(hybridCasterSlots.Levels);
-                for (var i = 0; i < 8; i++) {
-                    var spellLevel = new SpellsLevelEntry
-                    {
-                        Count = i switch
-                        {
-                            > 6 => new[] {0, 5, 5, 5, 5, 5, 5, 3},
-                            > 4 => new[] {0, 5, 5, 5, 5, 5, 5, 2},
-                            _ => new[] {0, 5, 5, 5, 5, 5, 5}
-                        }
-                    };
-                    levels.Add(spellLevel);
-                }
+                var additionalSlotTables = new List<int[]>
+                {
+                    new[] {0, 5, 5, 5, 5, 5, 5, 1},
+                    new[] {0, 5, 5, 5, 5, 5, 5, 2},
+                    new[] {0, 5, 5, 5, 5, 5, 5, 3},
+                    new[] {0, 5, 5, 5, 5, 5, 5, 4},
+                    new[] {0, 5, 5, 5, 5, 5, 5, 5},
+                };
+                levels.AddRange(additionalSlotTables.Select(slots => new SpellsLevelEntry {Count = slots}));
                 hybridCasterSlots.Levels = levels.ToArray();
             }
             
@@ -90,18 +88,15 @@ namespace SpellbookMerge.Patches
             {
                 var swordSaintSpellSlots = Resources.SpellTableBlueprints.SwordSaintSpellsTable;
                 List<SpellsLevelEntry> levels = new List<SpellsLevelEntry>(swordSaintSpellSlots.Levels);
-                for (var i = 0; i < 8; i++) {
-                    var spellLevel = new SpellsLevelEntry
-                    {
-                        Count = i switch
-                        {
-                            > 6 => new[] {0, 4, 4, 4, 4, 4, 4, 2},
-                            > 4 => new[] {0, 4, 4, 4, 4, 4, 4, 1},
-                            _ => new[] {0, 4, 4, 4, 4, 4, 4}
-                        }
-                    };
-                    levels.Add(spellLevel);
-                }
+                var additionalSlotTables = new List<int[]>
+                {
+                    new[] {0, 4, 4, 4, 4, 4, 4, 1},
+                    new[] {0, 4, 4, 4, 4, 4, 4, 2},
+                    new[] {0, 4, 4, 4, 4, 4, 4, 3},
+                    new[] {0, 4, 4, 4, 4, 4, 4, 4},
+                };
+                levels.AddRange(additionalSlotTables.Select(slots => new SpellsLevelEntry {Count = slots}));
+
                 swordSaintSpellSlots.Levels = levels.ToArray();
                 Main.Log($"Patched SwordSaint Spell Levels to {swordSaintSpellSlots.Levels.Length}");
             }
@@ -111,18 +106,14 @@ namespace SpellbookMerge.Patches
             {
                 var bloodRagerSpellSlots = Resources.SpellTableBlueprints.BloodRagerSpellsTable;
                 List<SpellsLevelEntry> levels = new List<SpellsLevelEntry>(bloodRagerSpellSlots.Levels);
-                for (var i = 0; i < 8; i++) {
-                    var spellLevel = new SpellsLevelEntry
-                    {
-                        Count = i switch
-                        {
-                            > 6 => new[] {0, 4, 4, 3, 2, 2},
-                            > 4 => new[] {0, 4, 4, 3, 2, 1},
-                            _ => new[] {0, 4, 4, 3, 2}
-                        }
-                    };
-                    levels.Add(spellLevel);
-                }
+                var additionalSlotTables = new List<int[]>
+                {
+                    new[] {0, 4, 4, 3, 3, 1},
+                    new[] {0, 4, 4, 4, 3, 2},
+                    new[] {0, 4, 4, 4, 4, 3},
+                    new[] {0, 4, 4, 4, 4, 4},
+                };
+                levels.AddRange(additionalSlotTables.Select(slots => new SpellsLevelEntry {Count = slots}));
                 bloodRagerSpellSlots.Levels = levels.ToArray();
                 Main.Log($"Patched BloodRager Spell Levels to {bloodRagerSpellSlots.Levels.Length}");
             }
