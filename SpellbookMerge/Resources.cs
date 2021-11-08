@@ -9,6 +9,14 @@ namespace SpellbookMerge
 {
     public static class Resources
     {
+        internal static class MythicMergeBlueprints
+        {
+            public static BlueprintFeatureSelectMythicSpellbook AngelIncorporateSpellbook =>
+                TryGetBlueprint<BlueprintFeatureSelectMythicSpellbook>("e1fbb0e0e610a3a4d91e5e5284587939")!;
+            public static BlueprintFeatureSelectMythicSpellbook LichIncorporateSpellbook =>
+                TryGetBlueprint<BlueprintFeatureSelectMythicSpellbook>("3f16e9caf7c683c40884c7c455ed26af")!;
+        }
+        
         internal static class SpellbookBlueprints
         {
             public static BlueprintSpellbook InquisitorSpellbook => TryGetBlueprint<BlueprintSpellbook>("57fab75111f377248810ece84193a5a5")!;
@@ -23,6 +31,7 @@ namespace SpellbookMerge
             public static BlueprintSpellbook HunterSpellbook => TryGetBlueprint<BlueprintSpellbook>("885cd422aa357e2409146b38bb1fec51")!;
             public static BlueprintSpellbook SorcererSpellbook => TryGetBlueprint<BlueprintSpellbook>("b3db3766a4b605040b366265e2af0e50")!;
             public static BlueprintSpellbook DruidSpellbook => TryGetBlueprint<BlueprintSpellbook>("fc78193f68150454483a7eea8b605b71")!;
+            public static BlueprintSpellbook PaladinSpellbook => TryGetBlueprint<BlueprintSpellbook>("bce4989b070ce924b986bf346f59e885")!;
         }
 
         internal static class SpellListBlueprints
@@ -51,6 +60,7 @@ namespace SpellbookMerge
             public static BlueprintSpellsTable SwordSaintSpellsTable => TryGetBlueprint<BlueprintSpellsTable>("b9fdc0b2d37eb9e4298f9163edf5ca82")!;
             public static BlueprintSpellsTable BloodRagerSpellsTable => TryGetBlueprint<BlueprintSpellsTable>("caf7018942861664ebe87687893ad05d")!;
             public static BlueprintSpellsTable AlchemistSpellsTable => TryGetBlueprint<BlueprintSpellsTable>("bf4a0a03a45275d438b8c59cd5388259")!;
+            public static BlueprintSpellsTable PaladinSpellsTable => TryGetBlueprint<BlueprintSpellsTable>("9aed4803e424ae8429c392d8fbfb88ff")!;
         }
 
         

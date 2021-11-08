@@ -4,13 +4,22 @@ This is a mod for Pathfinder Wrath of the Righteous. It adds additional spellboo
 
 ## Warnings
 
-This mod creates new blueprints and thus creates a save dependency. Once your save depends on this mod, it is not safe to uninstall it.
+* This mod creates new blueprints and thus creates a save dependency. Once your save depends on this mod, it is not safe to uninstall it.
 
-To be careful, install this mod just before reaching Mythic Rank 3. Test that you get the option to merge spellbooks, if not file a bug report.
+* To be careful, install this mod just before reaching Mythic Rank 3. Test that you get the option to merge spellbooks, if not file a bug report.
 
-I have tested this mod only with Aeon-Inquisitor, the other merges are untested (for now).
+* I have tested this mod only with Aeon-Inquisitor, the other merges are untested (for now).
+
+* After merging spellbooks your mythic spell progression is tied to your base spellbook. So be careful when taking dips, if you don't progress your base spellbook enough, you might end up not getting the required slots to cast higher level mythic spells.
+
+* Currently for Casters that learn spells automatically (Druid, Paladin etc.), there is a bug where any new spell slots gained by merging spellbooks do not trigger learning new spells. Reload the save/game to fix the issue. I haven't tested if you can recover them if use respec and keep progressing without learning these spells.
 
 ## Mythic Paths
+
+### Angel
+
+Angel has been patched to allow Paladin as a mergeable option. This needs thorough testing to see if higher level spells are castable and if the progressions are applied correctly. Be warned.
+
 
 ### Aeon
 
@@ -19,6 +28,9 @@ Aeon gets to merge spellbooks with the following base spellbooks
 * WarPriest
 * Inquisitor
 * Druid
+* Magus
+* Sword Saint
+* Hunter
 
 ### Azata
 Azata gets to merge spellbooks with the following base spellbooks
@@ -27,12 +39,16 @@ Azata gets to merge spellbooks with the following base spellbooks
 * Skald
 * Sword Saint
 * Sorcerer
+* Druid
+* Hunter
 
 ### Demon
 Demon gets to merge spellbooks with the following base spellbooks
 * BloodRager
 * Hunter
 * Skald
+* Magus
+* Sword Saint
 
 ### Trickster
 Trickster gets to merge spellbooks with the following base spellbooks
@@ -40,6 +56,9 @@ Trickster gets to merge spellbooks with the following base spellbooks
 * Eldritch Scoundrel
 * Magus
 * Sword Saint
+* Bard
+* Skald
+
 
 ## Base Spellbooks
 
@@ -53,17 +72,15 @@ The following spellbooks have had their spell slot progressions patched to allow
 * Skald
 * Inquisitor
 * WarPriest
+* Paladin
+* Hunter (Uses the Bard spellbook)
 
 BloodRager can now cast 5th level spells once your Caster Level goes beyond 20.
 The rest of the hybrid casters mentioned above can cast 7th level spells post CL 20.
 
-## FAQ
+Paladin progression has been specifically patched for allowing Angel merge. It has not been tested well yet. The progression is tight and slower than an Angel Oracle, but can't be helped, with the current approach. But by my estimation if you stay pure Paladin, you should be able to cast level 10 Angel spells as a merged caster once you reach Mythic 9/10.
+File an issue report if that's not the case.
 
-### Why can't we merge Angel and Paladin (or insert any other funky combination)?
-
-Technically we can, but balancing them is a nightmare. It is easier to merge full casters with full casters (eg: Angel-Oracle, Lich-Sorcerer) and hybrid casters with hybrid casters (eg: Aeon-Inquisitor, Azata-Magus).
-Paladin only gains up to 4th level spells, if we allow Angel to merge with it, there is no easy way to balance Paladin spell progression so that it is able to cast 9th/10th level spells.
-If you have any suggestions for balancing, let me know and I will think about it.
 
 ## Acknowledgements
 

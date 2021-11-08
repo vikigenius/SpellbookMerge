@@ -1,4 +1,5 @@
-﻿using HarmonyLib;
+﻿using System.Collections.Generic;
+using HarmonyLib;
 using Kingmaker.Blueprints;
 using Kingmaker.Blueprints.Classes;
 using Kingmaker.Blueprints.JsonSystem;
@@ -21,8 +22,22 @@ namespace SpellbookMerge.Patches
                 PatchAzataProgression();
                 PatchDemonProgression();
                 PatchTricksterProgression();
+                PatchAngelAllowedMerges();
             }
 
+            private static void PatchAngelAllowedMerges()
+            {
+                var angelIncorporateSpellbookFeature = Resources.MythicMergeBlueprints.AngelIncorporateSpellbook;
+                var angelAllowedMerges = new List<BlueprintSpellbookReference>(angelIncorporateSpellbookFeature.m_AllowedSpellbooks);
+                var additionalMerges = new List<BlueprintSpellbookReference> 
+                {
+                    Resources.SpellbookBlueprints.PaladinSpellbook.ToReference<BlueprintSpellbookReference>()
+                };
+                angelAllowedMerges.AddRange(additionalMerges);
+                angelIncorporateSpellbookFeature.m_AllowedSpellbooks = angelAllowedMerges.ToArray();
+                Main.Log("Patched Angel allowed spellbook merges");
+            }
+            
             private static void PatchAeonProgression()
             {
                 var aeonProgression = Resources.ProgressionBlueprints.AeonProgression;

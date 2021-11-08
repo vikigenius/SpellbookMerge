@@ -1,6 +1,5 @@
 ﻿using Kingmaker.Blueprints;
 using Kingmaker.Blueprints.Classes;
-using Kingmaker.Blueprints.Classes.Spells;
 using SpellbookMerge.Extensions;
 
 namespace SpellbookMerge.Features
@@ -18,6 +17,9 @@ namespace SpellbookMerge.Features
                     Resources.SpellbookBlueprints.InquisitorSpellbook.ToReference<BlueprintSpellbookReference>(),
                     Resources.SpellbookBlueprints.WarPriestSpellbook.ToReference<BlueprintSpellbookReference>(),
                     Resources.SpellbookBlueprints.DruidSpellbook.ToReference<BlueprintSpellbookReference>(),
+                    Resources.SpellbookBlueprints.MagusSpellbook.ToReference<BlueprintSpellbookReference>(),
+                    Resources.SpellbookBlueprints.SwordSaintSpellbook.ToReference<BlueprintSpellbookReference>(),
+                    Resources.SpellbookBlueprints.HunterSpellbook.ToReference<BlueprintSpellbookReference>(),
                 };
                 bp.m_MythicSpellList = Resources.SpellListBlueprints.AeonSpellList.ToReference<BlueprintSpellListReference>();
                 bp.IsClassFeature = true;
@@ -37,7 +39,9 @@ namespace SpellbookMerge.Features
                     Resources.SpellbookBlueprints.BardSpellbook.ToReference<BlueprintSpellbookReference>(),
                     Resources.SpellbookBlueprints.SkaldSpellbook.ToReference<BlueprintSpellbookReference>(),
                     Resources.SpellbookBlueprints.SwordSaintSpellbook.ToReference<BlueprintSpellbookReference>(),
-                    Resources.SpellbookBlueprints.SorcererSpellbook.ToReference<BlueprintSpellbookReference>()
+                    Resources.SpellbookBlueprints.SorcererSpellbook.ToReference<BlueprintSpellbookReference>(),
+                    Resources.SpellbookBlueprints.DruidSpellbook.ToReference<BlueprintSpellbookReference>(),
+                    Resources.SpellbookBlueprints.HunterSpellbook.ToReference<BlueprintSpellbookReference>(),
                 };
                 bp.m_MythicSpellList = Resources.SpellListBlueprints.AzataSpellList.ToReference<BlueprintSpellListReference>();
                 bp.IsClassFeature = true;
@@ -53,6 +57,8 @@ namespace SpellbookMerge.Features
                 
                 bp.m_AllowedSpellbooks = new[]
                 {
+                    Resources.SpellbookBlueprints.MagusSpellbook.ToReference<BlueprintSpellbookReference>(),
+                    Resources.SpellbookBlueprints.SwordSaintSpellbook.ToReference<BlueprintSpellbookReference>(),
                     Resources.SpellbookBlueprints.BloodRagerSpellbook.ToReference<BlueprintSpellbookReference>(),
                     Resources.SpellbookBlueprints.HunterSpellbook.ToReference<BlueprintSpellbookReference>(),
                     Resources.SpellbookBlueprints.SkaldSpellbook.ToReference<BlueprintSpellbookReference>()
@@ -74,7 +80,9 @@ namespace SpellbookMerge.Features
                     Resources.SpellbookBlueprints.MagusSpellbook.ToReference<BlueprintSpellbookReference>(),
                     Resources.SpellbookBlueprints.SwordSaintSpellbook.ToReference<BlueprintSpellbookReference>(),
                     Resources.SpellbookBlueprints.AlchemistSpellbook.ToReference<BlueprintSpellbookReference>(),
-                    Resources.SpellbookBlueprints.EldritchScoundrelSpellbook.ToReference<BlueprintSpellbookReference>()
+                    Resources.SpellbookBlueprints.EldritchScoundrelSpellbook.ToReference<BlueprintSpellbookReference>(),
+                    Resources.SpellbookBlueprints.BardSpellbook.ToReference<BlueprintSpellbookReference>(),
+                    Resources.SpellbookBlueprints.SkaldSpellbook.ToReference<BlueprintSpellbookReference>(),
                 };
                 bp.m_MythicSpellList = Resources.SpellListBlueprints.TricksterSpellList.ToReference<BlueprintSpellListReference>();
                 bp.IsClassFeature = true;

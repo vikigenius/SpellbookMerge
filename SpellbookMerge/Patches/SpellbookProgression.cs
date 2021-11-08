@@ -26,6 +26,7 @@ namespace SpellbookMerge.Patches
                 PatchSwordSaintSpellSlotProgression();
                 PatchBloodRagerSpellSlotProgression();
                 PatchAlchemistSpellSlotProgression();
+                PatchPaladinSpellSlotProgression();
             }
 
             private static void PatchHybridCasterSpellProgression(BlueprintSpellsTable hybridCasterSlots)
@@ -59,7 +60,7 @@ namespace SpellbookMerge.Patches
                 Main.Log($"Patched WarPriest Spell Levels to {warPriestSpellSlots.Levels.Length}");
             }
             
-            // Patch Bard Spellbook to allow 7th level spells
+            // Patch Bard Spellbook to allow 7th level spells (Also used by Hunter)
             private static void PatchBardSpellSlotProgression()
             {
                 var bardSpellSlots = Resources.SpellTableBlueprints.BardSpellsTable;
@@ -82,7 +83,7 @@ namespace SpellbookMerge.Patches
                 PatchHybridCasterSpellProgression(skaldSpellSlots);
                 Main.Log($"Patched Skald Spell Levels to {skaldSpellSlots.Levels.Length}");
             }
-            
+
             // Patch SwordSaint Spellbook to allow 7th level spells
             private static void PatchSwordSaintSpellSlotProgression()
             {
@@ -126,6 +127,29 @@ namespace SpellbookMerge.Patches
                 Main.Log($"Patched Alchemist Spell Levels to {alchemistSpellSlots.Levels.Length}");
             }
 
+            // Patch Paladin Spellbook to allow 10th level spells
+            private static void PatchPaladinSpellSlotProgression()
+            {
+                var paladinSpellSlots = Resources.SpellTableBlueprints.PaladinSpellsTable;
+                paladinSpellSlots.Levels[18].Count = new[] {0, 4, 4, 4, 4, 2, 2};
+                paladinSpellSlots.Levels[19].Count = new[] {0, 4, 4, 4, 4, 4, 4};
+                paladinSpellSlots.Levels[20].Count = new[] {0, 4, 4, 4, 4, 4, 4, 2};
+ 
+                List<SpellsLevelEntry> levels = new List<SpellsLevelEntry>(paladinSpellSlots.Levels);
+                var additionalSlotTables = new List<int[]>
+                {
+                    new[] {0, 4, 4, 4, 4, 4, 4, 4},
+                    new[] {0, 4, 4, 4, 4, 4, 4, 4, 2},
+                    new[] {0, 4, 4, 4, 4, 4, 4, 4, 4},
+                    new[] {0, 4, 4, 4, 4, 4, 4, 4, 4, 2},
+                    new[] {0, 4, 4, 4, 4, 4, 4, 4, 4, 4},
+                    new[] {0, 4, 4, 4, 4, 4, 4, 4, 4, 4, 2},
+                    new[] {0, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4},
+                };
+                levels.AddRange(additionalSlotTables.Select(slots => new SpellsLevelEntry {Count = slots}));
+                paladinSpellSlots.Levels = levels.ToArray();
+                Main.Log($"Patched Paladin Spell Levels to {paladinSpellSlots.Levels.Length}");
+            }
         }
     }
 }
