@@ -111,8 +111,11 @@ namespace SpellbookMerge.Patches
                 {
                     new[] {0, 4, 4, 3, 3, 1},
                     new[] {0, 4, 4, 4, 3, 2},
-                    new[] {0, 4, 4, 4, 4, 3},
-                    new[] {0, 4, 4, 4, 4, 4},
+                    new[] {0, 4, 4, 4, 4, 3, 1},
+                    new[] {0, 4, 4, 4, 4, 4, 2},
+                    new[] {0, 4, 4, 4, 4, 4, 3, 1},
+                    new[] {0, 4, 4, 4, 4, 4, 4, 2},
+                    new[] {0, 4, 4, 4, 4, 4, 4, 4},
                 };
                 levels.AddRange(additionalSlotTables.Select(slots => new SpellsLevelEntry {Count = slots}));
                 bloodRagerSpellSlots.Levels = levels.ToArray();

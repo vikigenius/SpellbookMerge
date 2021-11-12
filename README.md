@@ -41,6 +41,9 @@ Azata gets to merge spellbooks with the following base spellbooks
 * Sorcerer
 * Druid
 * Hunter
+* BloodRager
+* Wizard
+* ExploiterWizard
 
 ### Demon
 Demon gets to merge spellbooks with the following base spellbooks
@@ -58,6 +61,7 @@ Trickster gets to merge spellbooks with the following base spellbooks
 * Sword Saint
 * Bard
 * Skald
+* Witch
 
 
 ## Base Spellbooks
@@ -75,8 +79,7 @@ The following spellbooks have had their spell slot progressions patched to allow
 * Paladin
 * Hunter (Uses the Bard spellbook)
 
-BloodRager can now cast 5th level spells once your Caster Level goes beyond 20.
-The rest of the hybrid casters mentioned above can cast 7th level spells post CL 20.
+The patched hybrid casters mentioned above can cast 7th level spells post CL 20.
 
 Paladin progression has been specifically patched for allowing Angel merge. It has not been tested well yet. The progression is tight and slower than an Angel Oracle, but can't be helped, with the current approach. But by my estimation if you stay pure Paladin, you should be able to cast level 10 Angel spells as a merged caster once you reach Mythic 9/10.
 File an issue report if that's not the case.
