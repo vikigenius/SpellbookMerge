@@ -35,6 +35,7 @@ namespace SpellbookMerge
             public static BlueprintSpellbook WizardSpellbook => TryGetBlueprint<BlueprintSpellbook>("5a38c9ac8607890409fcb8f6342da6f4")!;
             public static BlueprintSpellbook ExploiterWizardSpellbook => TryGetBlueprint<BlueprintSpellbook>("d09794fb6f93e4a40929a965b434070d")!;
             public static BlueprintSpellbook WitchSpellbook => TryGetBlueprint<BlueprintSpellbook>("dd04f9239f655ea438976742728e4909")!;
+            public static BlueprintSpellbook EldritchScionSpellbook => TryGetBlueprint<BlueprintSpellbook>("e2763fbfdb91920458c4686c3e7ed085")!;
         }
 
         internal static class SpellListBlueprints
