@@ -14,6 +14,7 @@ This is a mod for Pathfinder Wrath of the Righteous. It adds additional spellboo
 
 * Currently for Casters that learn spells automatically (Druid, Paladin etc.), there is a bug where any new spell slots gained by merging spellbooks do not trigger learning new spells. Reload the save/game to fix the issue. I haven't tested if you can recover them if use respec and keep progressing without learning these spells.
 
+* There is an incompatibility with Tabletop Tweaks where it modifies the BloodRager spellbook. So if you want to merge BloodRager with mythic paths, disable the specific TTT tweak for it.
 ## Mythic Paths
 
 ### Angel
