@@ -45,6 +45,7 @@ Azata gets to merge spellbooks with the following base spellbooks
 * BloodRager
 * Wizard
 * ExploiterWizard
+* Arcanist
 
 ### Demon
 Demon gets to merge spellbooks with the following base spellbooks

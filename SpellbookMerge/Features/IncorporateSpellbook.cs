@@ -47,6 +47,7 @@ namespace SpellbookMerge.Features
                     Resources.SpellbookBlueprints.WizardSpellbook.ToReference<BlueprintSpellbookReference>(),
                     Resources.SpellbookBlueprints.ExploiterWizardSpellbook.ToReference<BlueprintSpellbookReference>(),
                     Resources.SpellbookBlueprints.EldritchScionSpellbook.ToReference<BlueprintSpellbookReference>(),
+                    Resources.SpellbookBlueprints.ArcanistSpellbook.ToReference<BlueprintSpellbookReference>(),
                 };
                 bp.m_MythicSpellList = Resources.SpellListBlueprints.AzataSpellList.ToReference<BlueprintSpellListReference>();
                 bp.IsClassFeature = true;
