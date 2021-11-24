@@ -40,6 +40,7 @@ Azata gets to merge spellbooks with the following base spellbooks
 * Skald
 * Sword Saint
 * Sorcerer
+* Sage Sorcerer
 * Druid
 * Hunter
 * BloodRager
@@ -54,6 +55,8 @@ Demon gets to merge spellbooks with the following base spellbooks
 * Skald
 * Magus
 * Sword Saint
+* Sorcerer
+* Sage Sorcerer
 
 ### Trickster
 Trickster gets to merge spellbooks with the following base spellbooks
