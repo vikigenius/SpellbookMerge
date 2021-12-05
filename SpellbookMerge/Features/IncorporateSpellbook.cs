@@ -49,6 +49,7 @@ namespace SpellbookMerge.Features
                     Resources.SpellbookBlueprints.EldritchScionSpellbook.ToReference<BlueprintSpellbookReference>(),
                     Resources.SpellbookBlueprints.ArcanistSpellbook.ToReference<BlueprintSpellbookReference>(),
                     Resources.SpellbookBlueprints.SageSpellbook.ToReference<BlueprintSpellbookReference>(),
+                    Resources.SpellbookBlueprints.CrossbloodedSpellbook.ToReference<BlueprintSpellbookReference>(),
                 };
                 bp.m_MythicSpellList = Resources.SpellListBlueprints.AzataSpellList.ToReference<BlueprintSpellListReference>();
                 bp.IsClassFeature = true;
@@ -72,6 +73,7 @@ namespace SpellbookMerge.Features
                     Resources.SpellbookBlueprints.EldritchScionSpellbook.ToReference<BlueprintSpellbookReference>(),
                     Resources.SpellbookBlueprints.SageSpellbook.ToReference<BlueprintSpellbookReference>(),
                     Resources.SpellbookBlueprints.SorcererSpellbook.ToReference<BlueprintSpellbookReference>(),
+                    Resources.SpellbookBlueprints.CrossbloodedSpellbook.ToReference<BlueprintSpellbookReference>(),
                 };
                 bp.m_MythicSpellList = Resources.SpellListBlueprints.DemonSpellList.ToReference<BlueprintSpellListReference>();
                 bp.IsClassFeature = true;
