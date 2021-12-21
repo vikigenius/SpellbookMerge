@@ -66,7 +66,7 @@ namespace SpellbookMerge.Config
                 SaveTo(userConfigDir);
                 return;
             }
-            var loadedBlueprints = Blueprints.FromFile(blueprintsFile);
+            var loadedBlueprints = FromFile(blueprintsFile);
             if (loadedBlueprints!.OverrideIds)
             {
                 OverrideIds = loadedBlueprints.OverrideIds;

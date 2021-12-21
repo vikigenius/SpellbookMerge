@@ -16,6 +16,12 @@ This is a mod for Pathfinder Wrath of the Righteous. It adds additional spellboo
 
 * There is an incompatibility with Tabletop Tweaks where it modifies the BloodRager spellbook. So if you want to merge BloodRager with mythic paths, disable the specific TTT tweak for it.
 
+## Configuration
+
+The patches to spellbook progressions can be disabled in the json settings file.
+In your mod directory for this mod, you should find a UserSettings directory. Open PatchSettings.json and set any spellbook progression patch that you do not want to false.
+Note that this only disables the spellbook progression patches, you will still get options to merge spellbooks, you can just chose not to merge if you don't want to.
+
 ## Mythic Paths
 
 ### Angel

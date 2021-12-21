@@ -57,6 +57,8 @@
     <None Remove="Config\MergeableSpellbooks.json" />
     <None Remove="Config\Blueprints.json" />
     <EmbeddedResource Include="Config\Blueprints.json" />
+    <None Remove="Config\PatchSettings.json" />
+    <EmbeddedResource Include="Config\PatchSettings.json" />
   </ItemGroup>
   <Target Name="RemoveLib" BeforeTargets="Clean" Condition="Exists('$(SolutionDir)lib')">
     <RemoveDir Directories="$(SolutionDir)lib" />

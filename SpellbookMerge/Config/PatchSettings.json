@@ -1,0 +1,13 @@
+﻿{
+  "SpellProgressionPatches": {
+    "Inquisitor": true,
+    "WarPriest": true,
+    "Magus": true,
+    "Bard": true,
+    "Skald": true,
+    "SwordSaint": true,
+    "BloodRager": true,
+    "Alchemist": true,
+    "Paladin": true
+  }
+}
