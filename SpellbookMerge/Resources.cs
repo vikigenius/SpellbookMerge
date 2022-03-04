@@ -109,12 +109,13 @@ namespace SpellbookMerge
             if (textToLocalizedString.TryGetValue(value, out LocalizedString localized)) {
                 return localized;
             }
-            var strings = LocalizationManager.CurrentPack?.Strings;
-            if (strings!.TryGetValue(key, out string oldValue) && value != oldValue) {
+            var current = LocalizationManager.CurrentPack?.GetText(key, false);
+            if (current != "" && current != value) {
                 Main.LogDebug($"Info: duplicate localized string `{key}`, different text.");
             }
-            strings[key] = value;
+            LocalizationManager.CurrentPack?.PutString(key, value);
             localized = new LocalizedString {
+                m_ShouldProcess = false,
                 m_Key = key
             };
             textToLocalizedString[value] = localized;
