@@ -23,6 +23,9 @@ namespace SpellbookMerge.Features
                     Resources.SpellbookBlueprints.EldritchScionSpellbook.ToReference<BlueprintSpellbookReference>(),
                 };
                 bp.m_MythicSpellList = Resources.SpellListBlueprints.AeonSpellList.ToReference<BlueprintSpellListReference>();
+                // TODO This is just there for compatibility with Owlcat new changes in 1.3. We are not using it yet, since we reverted to the old merging behavior
+                bp.m_SpellKnownForSpontaneous = Resources.SpellTableBlueprints.MythicSpontaneousSpellsKnownTable
+                    .ToReference<BlueprintSpellsTableReference>();
                 bp.IsClassFeature = true;
             });
         }
@@ -52,6 +55,9 @@ namespace SpellbookMerge.Features
                     Resources.SpellbookBlueprints.CrossbloodedSpellbook.ToReference<BlueprintSpellbookReference>(),
                 };
                 bp.m_MythicSpellList = Resources.SpellListBlueprints.AzataSpellList.ToReference<BlueprintSpellListReference>();
+                // TODO This is just there for compatibility with Owlcat new changes in 1.3. We are not using it yet, since we reverted to the old merging behavior
+                bp.m_SpellKnownForSpontaneous = Resources.SpellTableBlueprints.MythicSpontaneousSpellsKnownTable
+                    .ToReference<BlueprintSpellsTableReference>();
                 bp.IsClassFeature = true;
             });
         }
@@ -76,6 +82,9 @@ namespace SpellbookMerge.Features
                     Resources.SpellbookBlueprints.CrossbloodedSpellbook.ToReference<BlueprintSpellbookReference>(),
                 };
                 bp.m_MythicSpellList = Resources.SpellListBlueprints.DemonSpellList.ToReference<BlueprintSpellListReference>();
+                // TODO This is just there for compatibility with Owlcat new changes in 1.3. We are not using it yet, since we reverted to the old merging behavior
+                bp.m_SpellKnownForSpontaneous = Resources.SpellTableBlueprints.MythicSpontaneousSpellsKnownTable
+                    .ToReference<BlueprintSpellsTableReference>();
                 bp.IsClassFeature = true;
             });
         }
@@ -99,6 +108,9 @@ namespace SpellbookMerge.Features
                     Resources.SpellbookBlueprints.EldritchScionSpellbook.ToReference<BlueprintSpellbookReference>(),
                 };
                 bp.m_MythicSpellList = Resources.SpellListBlueprints.TricksterSpellList.ToReference<BlueprintSpellListReference>();
+                // TODO This is just there for compatibility with Owlcat new changes in 1.3. We are not using it yet, since we reverted to the old merging behavior
+                bp.m_SpellKnownForSpontaneous = Resources.SpellTableBlueprints.MythicSpontaneousSpellsKnownTable
+                    .ToReference<BlueprintSpellsTableReference>();
                 bp.IsClassFeature = true;
             });
         }

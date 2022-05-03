@@ -2,6 +2,13 @@
 
 This is a mod for Pathfinder Wrath of the Righteous. It adds additional spellbook merging options.
 
+## Patch 1.3
+
+Owlcat introduced several changes to the Spellbook Merging system in patch 1.3, that just broke the mod.
+To quickly fix the issue I have just undid the spellbook merging changes they introduced and used the old system.
+So people that like Owlcat's new system, you will have to wait for a while for me to figure the new system out and patch it.
+For people that liked the older merging system, think of this as a feature instead of a bug :)
+
 ## Warnings
 
 * This mod creates new blueprints and thus creates a save dependency. Once your save depends on this mod, it is not safe to uninstall it.

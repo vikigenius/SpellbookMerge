@@ -59,6 +59,7 @@ namespace SpellbookMerge
 
         internal static class SpellTableBlueprints
         {
+            public static BlueprintSpellsTable MythicSpontaneousSpellsKnownTable => TryGetBlueprint<BlueprintSpellsTable>("2d574ccdea8543bda1dffe63b0f16760")!;
             public static BlueprintSpellsTable InquisitorSpellsTable => TryGetBlueprint<BlueprintSpellsTable>("83d3e15962e5d6949b90b5c226a2b487")!;
             public static BlueprintSpellsTable WarPriestSpellsTable => TryGetBlueprint<BlueprintSpellsTable>("c73a394ec54adc243aef8ac967e39324")!;
             public static BlueprintSpellsTable MagusSpellsTable => TryGetBlueprint<BlueprintSpellsTable>("6326b540f7c6a604f9d6f82cc0e2293c")!;
