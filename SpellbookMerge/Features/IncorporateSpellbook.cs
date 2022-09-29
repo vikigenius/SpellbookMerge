@@ -21,6 +21,17 @@ namespace SpellbookMerge.Features
                     Resources.SpellbookBlueprints.SwordSaintSpellbook.ToReference<BlueprintSpellbookReference>(),
                     Resources.SpellbookBlueprints.HunterSpellbook.ToReference<BlueprintSpellbookReference>(),
                     Resources.SpellbookBlueprints.EldritchScionSpellbook.ToReference<BlueprintSpellbookReference>(),
+                    Resources.SpellbookBlueprints.SorcererSpellbook.ToReference<BlueprintSpellbookReference>(),
+                    Resources.SpellbookBlueprints.WizardSpellbook.ToReference<BlueprintSpellbookReference>(),
+                    Resources.SpellbookBlueprints.ArcanistSpellbook.ToReference<BlueprintSpellbookReference>(),
+                    Resources.SpellbookBlueprints.SageSpellbook.ToReference<BlueprintSpellbookReference>(),
+                    Resources.SpellbookBlueprints.CrossbloodedSpellbook.ToReference<BlueprintSpellbookReference>(),
+                    Resources.SpellbookBlueprints.OracleSpellbook.ToReference<BlueprintSpellbookReference>(),
+                    Resources.SpellbookBlueprints.BardSpellbook.ToReference<BlueprintSpellbookReference>(),
+                    Resources.SpellbookBlueprints.ShamanSpellbook.ToReference<BlueprintSpellbookReference>(),
+                    Resources.SpellbookBlueprints.ClericSpellbook.ToReference<BlueprintSpellbookReference>(),
+                    Resources.SpellbookBlueprints.WitchSpellbook.ToReference<BlueprintSpellbookReference>(),
+
                 };
                 bp.m_MythicSpellList = Resources.SpellListBlueprints.AeonSpellList.ToReference<BlueprintSpellListReference>();
                 // TODO This is just there for compatibility with Owlcat new changes in 1.3. We are not using it yet, since we reverted to the old merging behavior
@@ -53,6 +64,10 @@ namespace SpellbookMerge.Features
                     Resources.SpellbookBlueprints.ArcanistSpellbook.ToReference<BlueprintSpellbookReference>(),
                     Resources.SpellbookBlueprints.SageSpellbook.ToReference<BlueprintSpellbookReference>(),
                     Resources.SpellbookBlueprints.CrossbloodedSpellbook.ToReference<BlueprintSpellbookReference>(),
+                    Resources.SpellbookBlueprints.OracleSpellbook.ToReference<BlueprintSpellbookReference>(),
+                    Resources.SpellbookBlueprints.ShamanSpellbook.ToReference<BlueprintSpellbookReference>(),
+                    Resources.SpellbookBlueprints.ClericSpellbook.ToReference<BlueprintSpellbookReference>(),
+                    Resources.SpellbookBlueprints.WitchSpellbook.ToReference<BlueprintSpellbookReference>(),
                 };
                 bp.m_MythicSpellList = Resources.SpellListBlueprints.AzataSpellList.ToReference<BlueprintSpellListReference>();
                 // TODO This is just there for compatibility with Owlcat new changes in 1.3. We are not using it yet, since we reverted to the old merging behavior
@@ -80,6 +95,15 @@ namespace SpellbookMerge.Features
                     Resources.SpellbookBlueprints.SageSpellbook.ToReference<BlueprintSpellbookReference>(),
                     Resources.SpellbookBlueprints.SorcererSpellbook.ToReference<BlueprintSpellbookReference>(),
                     Resources.SpellbookBlueprints.CrossbloodedSpellbook.ToReference<BlueprintSpellbookReference>(),
+                    Resources.SpellbookBlueprints.ArcanistSpellbook.ToReference<BlueprintSpellbookReference>(),
+                    Resources.SpellbookBlueprints.OracleSpellbook.ToReference<BlueprintSpellbookReference>(),
+                    Resources.SpellbookBlueprints.BardSpellbook.ToReference<BlueprintSpellbookReference>(),
+                    Resources.SpellbookBlueprints.ShamanSpellbook.ToReference<BlueprintSpellbookReference>(),
+                    Resources.SpellbookBlueprints.ClericSpellbook.ToReference<BlueprintSpellbookReference>(),
+                    Resources.SpellbookBlueprints.SorcererSpellbook.ToReference<BlueprintSpellbookReference>(),
+                    Resources.SpellbookBlueprints.WizardSpellbook.ToReference<BlueprintSpellbookReference>(),
+                    Resources.SpellbookBlueprints.DruidSpellbook.ToReference<BlueprintSpellbookReference>(),
+                    Resources.SpellbookBlueprints.WitchSpellbook.ToReference<BlueprintSpellbookReference>(),
                 };
                 bp.m_MythicSpellList = Resources.SpellListBlueprints.DemonSpellList.ToReference<BlueprintSpellListReference>();
                 // TODO This is just there for compatibility with Owlcat new changes in 1.3. We are not using it yet, since we reverted to the old merging behavior
@@ -106,6 +130,16 @@ namespace SpellbookMerge.Features
                     Resources.SpellbookBlueprints.SkaldSpellbook.ToReference<BlueprintSpellbookReference>(),
                     Resources.SpellbookBlueprints.WitchSpellbook.ToReference<BlueprintSpellbookReference>(),
                     Resources.SpellbookBlueprints.EldritchScionSpellbook.ToReference<BlueprintSpellbookReference>(),
+                    Resources.SpellbookBlueprints.SageSpellbook.ToReference<BlueprintSpellbookReference>(),
+                    Resources.SpellbookBlueprints.SorcererSpellbook.ToReference<BlueprintSpellbookReference>(),
+                    Resources.SpellbookBlueprints.CrossbloodedSpellbook.ToReference<BlueprintSpellbookReference>(),
+                    Resources.SpellbookBlueprints.ArcanistSpellbook.ToReference<BlueprintSpellbookReference>(),
+                    Resources.SpellbookBlueprints.OracleSpellbook.ToReference<BlueprintSpellbookReference>(),
+                    Resources.SpellbookBlueprints.ShamanSpellbook.ToReference<BlueprintSpellbookReference>(),
+                    Resources.SpellbookBlueprints.ClericSpellbook.ToReference<BlueprintSpellbookReference>(),
+                    Resources.SpellbookBlueprints.SorcererSpellbook.ToReference<BlueprintSpellbookReference>(),
+                    Resources.SpellbookBlueprints.WizardSpellbook.ToReference<BlueprintSpellbookReference>(),
+                    Resources.SpellbookBlueprints.DruidSpellbook.ToReference<BlueprintSpellbookReference>(),
                 };
                 bp.m_MythicSpellList = Resources.SpellListBlueprints.TricksterSpellList.ToReference<BlueprintSpellListReference>();
                 // TODO This is just there for compatibility with Owlcat new changes in 1.3. We are not using it yet, since we reverted to the old merging behavior
