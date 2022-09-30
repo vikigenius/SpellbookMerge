@@ -23,21 +23,45 @@ namespace SpellbookMerge.Patches
                 PatchDemonProgression();
                 PatchTricksterProgression();
                 PatchAngelAllowedMerges();
+                PatchLichAllowedMerges();
             }
 
             private static void PatchAngelAllowedMerges()
             {
                 var angelIncorporateSpellbookFeature = Resources.MythicMergeBlueprints.AngelIncorporateSpellbook;
                 var angelAllowedMerges = new List<BlueprintSpellbookReference>(angelIncorporateSpellbookFeature.m_AllowedSpellbooks);
-                var additionalMerges = new List<BlueprintSpellbookReference> 
+                var additionalMerges = new List<BlueprintSpellbookReference>
                 {
-                    Resources.SpellbookBlueprints.PaladinSpellbook.ToReference<BlueprintSpellbookReference>()
+                    Resources.SpellbookBlueprints.PaladinSpellbook.ToReference<BlueprintSpellbookReference>(),
+                    Resources.SpellbookBlueprints.SorcererSpellbook.ToReference<BlueprintSpellbookReference>(),
+                    Resources.SpellbookBlueprints.WizardSpellbook.ToReference<BlueprintSpellbookReference>(),
+                    Resources.SpellbookBlueprints.ArcanistSpellbook.ToReference<BlueprintSpellbookReference>(),
+                    Resources.SpellbookBlueprints.WitchSpellbook.ToReference<BlueprintSpellbookReference>(),
+                    Resources.SpellbookBlueprints.SageSpellbook.ToReference<BlueprintSpellbookReference>(),
+                    Resources.SpellbookBlueprints.CrossbloodedSpellbook.ToReference<BlueprintSpellbookReference>(),
                 };
                 angelAllowedMerges.AddRange(additionalMerges);
                 angelIncorporateSpellbookFeature.m_AllowedSpellbooks = angelAllowedMerges.ToArray();
                 Main.Log("Patched Angel allowed spellbook merges");
             }
-            
+
+            private static void PatchLichAllowedMerges()
+            {
+                var lichIncorporateSpellbookFeature = Resources.MythicMergeBlueprints.LichIncorporateSpellbook;
+                var lichAllowedMerges = new List<BlueprintSpellbookReference>(lichIncorporateSpellbookFeature.m_AllowedSpellbooks);
+                var additionalMerges = new List<BlueprintSpellbookReference>
+                {
+                    Resources.SpellbookBlueprints.DruidSpellbook.ToReference<BlueprintSpellbookReference>(),
+                    Resources.SpellbookBlueprints.OracleSpellbook.ToReference<BlueprintSpellbookReference>(),
+                    Resources.SpellbookBlueprints.ShamanSpellbook.ToReference<BlueprintSpellbookReference>(),
+                    Resources.SpellbookBlueprints.ClericSpellbook.ToReference<BlueprintSpellbookReference>(),
+
+                };
+                lichAllowedMerges.AddRange(additionalMerges);
+                lichIncorporateSpellbookFeature.m_AllowedSpellbooks = lichAllowedMerges.ToArray();
+                Main.Log("Patched Lich allowed spellbook merges");
+            }
+
             private static void PatchAeonProgression()
             {
                 var aeonProgression = Resources.ProgressionBlueprints.AeonProgression;
