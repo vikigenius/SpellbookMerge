@@ -33,7 +33,6 @@ namespace SpellbookMerge.Patches
                 var additionalMerges = new List<BlueprintSpellbookReference>
                 {
                     Resources.SpellbookBlueprints.PaladinSpellbook.ToReference<BlueprintSpellbookReference>(),
-                    Resources.SpellbookBlueprints.WarPriestSpellbook.ToReference<BlueprintSpellbookReference>(),
                     Resources.SpellbookBlueprints.SorcererSpellbook.ToReference<BlueprintSpellbookReference>(),
                     Resources.SpellbookBlueprints.WizardSpellbook.ToReference<BlueprintSpellbookReference>(),
                     Resources.SpellbookBlueprints.ArcanistSpellbook.ToReference<BlueprintSpellbookReference>(),
@@ -54,7 +53,6 @@ namespace SpellbookMerge.Patches
                 {
                     Resources.SpellbookBlueprints.DruidSpellbook.ToReference<BlueprintSpellbookReference>(),
                     Resources.SpellbookBlueprints.OracleSpellbook.ToReference<BlueprintSpellbookReference>(),
-                    Resources.SpellbookBlueprints.BardSpellbook.ToReference<BlueprintSpellbookReference>(),
                     Resources.SpellbookBlueprints.ShamanSpellbook.ToReference<BlueprintSpellbookReference>(),
                     Resources.SpellbookBlueprints.ClericSpellbook.ToReference<BlueprintSpellbookReference>(),
 
