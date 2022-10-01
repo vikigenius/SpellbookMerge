@@ -33,8 +33,23 @@ Note that this only disables the spellbook progression patches, you will still g
 
 ### Angel
 
-Angel has been patched to allow Paladin as a mergeable option. This needs thorough testing to see if higher level spells are castable and if the progressions are applied correctly. Be warned.
+Angel can merge with the followin additional spellbooks
+* Palading (This needs thorough testing to see if higher level spells are castable and if the progressions are applied correctly. Be warned.)
+* Sorcerer
+* Wizard
+* Arcanist
+* Witch
+* Sage Sorcerer
+* Crossblooded Sorcerer
 
+### Lich
+
+Lich can now merge with the following spellbooks.
+
+* Druid
+* Oracle
+* Shaman
+* Cleric
 
 ### Aeon
 
@@ -46,6 +61,17 @@ Aeon gets to merge spellbooks with the following base spellbooks
 * Magus
 * Sword Saint
 * Hunter
+* Eldritch Scion
+* Sorcerer
+* Wizard
+* Arcanist
+* Sage Sorcerer
+* Cross Blooded Sorcerer
+* Oracle
+* Bard
+* Shaman
+* Cleric
+* Witch
 
 ### Azata
 Azata gets to merge spellbooks with the following base spellbooks
@@ -61,6 +87,13 @@ Azata gets to merge spellbooks with the following base spellbooks
 * Wizard
 * ExploiterWizard
 * Arcanist
+* Eldritch Scion
+* Arcanist
+* Cross Blooded Sorcerer
+* Oracle
+* Shaman
+* Cleric
+* Witch
 
 ### Demon
 Demon gets to merge spellbooks with the following base spellbooks
@@ -71,6 +104,17 @@ Demon gets to merge spellbooks with the following base spellbooks
 * Sword Saint
 * Sorcerer
 * Sage Sorcerer
+* Bard
+* Eldritch Scion
+* Cross Blooded Sorcerer
+* Arcanist
+* Oracle
+* Bard
+* Shaman
+* Cleric
+* Wizard
+* Druid
+* Witch
 
 ### Trickster
 Trickster gets to merge spellbooks with the following base spellbooks
@@ -81,6 +125,15 @@ Trickster gets to merge spellbooks with the following base spellbooks
 * Bard
 * Skald
 * Witch
+* Eldritch Scion
+* Sage Sorcerer
+* Sorcerer
+* Cross Blooded Sorcerer
+* Wizard
+* Druid
+* Cleric
+* Oracle
+* Shaman
 
 
 ## Base Spellbooks
@@ -97,6 +150,8 @@ The following spellbooks have had their spell slot progressions patched to allow
 * WarPriest
 * Paladin
 * Hunter (Uses the Bard spellbook)
+* Eldritch Scion (Uses the Bard progression)
+
 
 The patched hybrid casters mentioned above can cast 7th level spells post CL 20.
 
