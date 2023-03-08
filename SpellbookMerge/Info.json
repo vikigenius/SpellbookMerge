@@ -1,12 +1,10 @@
 ﻿{
-  "AssemblyName": "SpellbookMerge.dll",
-  "Author": "vikigenius",
-  "DisplayName": "Spellbook Merge",
-  "EntryMethod": "SpellbookMerge.Main.Load",
-  "GameVersion": "2.10.0b",
-  "Homepage": "https://github.com/vikigenius/SpellbookMerge",
   "Id": "SpellbookMerge",
+  "DisplayName": "Spellbook Merge",
+  "Author": "vikigenius",
+  "Version": "1.7.1",
   "ManagerVersion": "0.21.3",
   "Requirements": [],
-  "Version": "1.7.1"
+  "AssemblyName": "SpellbookMerge.dll",
+  "EntryMethod": "SpellbookMerge.Main.Load"
 }
